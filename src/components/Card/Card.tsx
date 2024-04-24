@@ -14,6 +14,7 @@ interface CardProps {
   beverage?: string;
   food?: string;
   time?: string;
+  key?: number;
 }
 const Card: React.FC<CardProps> = ({
   id,
@@ -22,9 +23,10 @@ const Card: React.FC<CardProps> = ({
   beverage,
   food,
   time,
+  key,
 }) => {
   return (
-    <div className="max-w-[310px] rounded-[6px] border mb-2">
+    <div className="max-w-[310px] rounded-[6px] border mb-2" key={key}>
       <div className="border-b p-3 flex justify-between">
         <div className="flex items-center gap-1">
           <h4>ID: {id}</h4>

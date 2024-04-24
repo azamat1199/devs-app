@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import { GlobalRoutes } from "./configs/global-routes";
-import { ScrollToTop } from "./services/ScrollToTop/ScrollToTop";
+import { GlobalRoutes } from "./routes/global-routes";
+import { ScrollToTop } from "./hooks/helpers/ScrollToTop/ScrollToTop";
 
 function App() {
   return (

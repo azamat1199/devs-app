@@ -49,6 +49,7 @@ const Person = () => {
             beverage={item.beverage}
             food={item.food}
             time={item.time}
+            key={index}
           />
         );
       })}
